@@ -13,9 +13,9 @@ class Global {
     static let documentsDirectory = fm.urls(for: .documentDirectory, in: .userDomainMask).last!
     static let storePath  = Global.documentsDirectory.appendingPathComponent("books-datastore").path
     static let remoteDb = "booksdb"
-    static let dbkey = "tsearnothereparzanderehu"
-    static let dbpwd = "a0e72f3181e6855c15c74c74775a19f9a8a7d3e9"
-    static let dbuser = "bdbf2b08-fb3b-4a6f-aab2-1429e419b68d-bluemix"
+    static let dbkey = "xxxxxxxx"
+    static let dbpwd = "xxxxxx"
+    static let dbuser = "xxxxxxxx"
     static let remoteDbString = "https://" +
         Global.dbkey + ":" +
         Global.dbpwd + "@" +
