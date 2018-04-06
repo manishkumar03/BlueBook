@@ -1,0 +1,6 @@
+framework module Pods_BlueBook {
+  umbrella header "Pods-BlueBook-umbrella.h"
+
+  export *
+  module * { export * }
+}

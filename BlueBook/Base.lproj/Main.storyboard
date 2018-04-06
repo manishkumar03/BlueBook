@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3jW-0X-8nm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ScannerVC" id="BYZ-38-t0r" customClass="ScannerViewController" customModule="BlueBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.8" y="157.87106446776613"/>
+        </scene>
+        <!--Book DetailsVC-->
+        <scene sceneID="FiB-JA-HaL">
+            <objects>
+                <viewController storyboardIdentifier="BookDetailsVC" id="3pA-Aa-Zgm" customClass="BookDetailsVC" customModule="BlueBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I3n-sh-gAc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gI3-26-mDd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gI3-26-mDd" secondAttribute="bottom" id="6Aa-9e-mYe"/>
+                            <constraint firstAttribute="trailing" secondItem="gI3-26-mDd" secondAttribute="trailing" id="YSn-xg-NC1"/>
+                            <constraint firstItem="gI3-26-mDd" firstAttribute="leading" secondItem="I3n-sh-gAc" secondAttribute="leading" id="Yzc-vA-Xhb"/>
+                            <constraint firstItem="gI3-26-mDd" firstAttribute="top" secondItem="I3n-sh-gAc" secondAttribute="top" constant="20" symbolic="YES" id="vmo-78-zFm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TCY-tg-6XT"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="gI3-26-mDd" id="rUd-KH-MdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="214-8v-C4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.8000000000002" y="160.56971514242881"/>
+        </scene>
+        <!--About ScreenVC-->
+        <scene sceneID="IQc-ww-y63">
+            <objects>
+                <viewController storyboardIdentifier="AboutScreenVC" id="xQA-2G-YYF" customClass="AboutScreenVC" customModule="BlueBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUr-UN-k2f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-E1-otK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Vf-E1-otK" firstAttribute="top" secondItem="3lA-PF-j3c" secondAttribute="top" id="GgD-Ht-ggL"/>
+                            <constraint firstItem="6Vf-E1-otK" firstAttribute="bottom" secondItem="3lA-PF-j3c" secondAttribute="bottom" id="Wb8-VI-aEh"/>
+                            <constraint firstItem="6Vf-E1-otK" firstAttribute="leading" secondItem="HUr-UN-k2f" secondAttribute="leading" id="gHa-Jz-IRO"/>
+                            <constraint firstAttribute="trailing" secondItem="6Vf-E1-otK" secondAttribute="trailing" id="vkm-zB-VaM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3lA-PF-j3c"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6Vf-E1-otK" id="Ojp-Hz-9yc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vay-Dv-tAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3168.8000000000002" y="161.46926536731635"/>
+        </scene>
+        <!--Book Collection View Controller-->
+        <scene sceneID="mPh-JQ-xIA">
+            <objects>
+                <collectionViewController id="jN2-FH-KH5" customClass="BookCollectionViewController" customModule="BlueBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" id="6Ax-yy-iot">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.83869926085798885" blue="0.84662515862944165" alpha="0.1680757705479452" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="v3R-qA-SqZ">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Xx4-Oz-FE2" customClass="BookCell" customModule="BlueBook" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jN2-FH-KH5" id="xFf-ns-KuC"/>
+                            <outlet property="delegate" destination="jN2-FH-KH5" id="xhl-mk-TnY"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="aAF-JT-qYn">
+                        <leftBarButtonItems>
+                            <barButtonItem title="About" id="I9P-lj-euf">
+                                <connections>
+                                    <action selector="showAboutScreen:" destination="jN2-FH-KH5" id="Imq-ef-a05"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Bx" id="vg1-Ub-yK8">
+                                <connections>
+                                    <action selector="showBooksOnBluemix:" destination="jN2-FH-KH5" id="O34-8e-1cb"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="S5e-xT-Nlb">
+                                <connections>
+                                    <action selector="scanNewBook:" destination="jN2-FH-KH5" id="qEf-RK-hmz"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="eoZ-tR-gIb">
+                                <connections>
+                                    <action selector="refreshFromRemote:" destination="jN2-FH-KH5" id="6tL-oC-6eZ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4P-bY-hTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.8" y="157.87106446776613"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H9K-WJ-pTg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3jW-0X-8nm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ASN-pj-8QG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jN2-FH-KH5" kind="relationship" relationship="rootViewController" id="IRn-uY-4fN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZc-dc-ayf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="158"/>
+        </scene>
+    </scenes>
+</document>
